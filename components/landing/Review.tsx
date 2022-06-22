@@ -27,9 +27,10 @@ const Review: FC = () => {
     <div className="my-16 md:my-24 mx-10 font-chakra text-white">
       <h1 className="text-3xl md:text-5xl text-center mt-10">รีวิวจากลูกค้า</h1>
       <div className="flex flex-col md:grid md:grid-cols-3 md:gap-x-10 items-center justify-start">
-        {testamonies.map((testamony) => {
+        {testamonies.map((testamony, index) => {
           return (
             <Testamony
+              key={index}
               path={testamony.src}
               name={testamony.name}
               testamony={testamony.testamony}
