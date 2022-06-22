@@ -5,7 +5,12 @@ const History: FC = () => {
   return (
     <div className="flex flex-col items-center justify-around px-8 gap-y-10 md:my-2 md:mt-32 md:justify-between lg:justify-around md:flex-row-reverse md:items-start md:px-16">
       <div className="w-32 h-40 md:w-72 md:h-[360px] border-4 md:border-2 border-white relative">
-        <Image src="/assets/port.jpg" layout="fill" objectFit="cover" />
+        <Image
+          alt="portrait picture of the fortune teller"
+          src="/assets/port.jpg"
+          layout="fill"
+          objectFit="cover"
+        />
       </div>
       <div className="text-white w-full md:w-auto md:py-4 ">
         <h2 className="my-4 text-2xl md:text-4xl">ประวัติหมอหมึก</h2>
